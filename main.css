@@ -1,0 +1,36 @@
+* {
+  margin : 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+nav {
+  display: flex;
+
+}
+
+nav li {
+  list-style: none;
+}
+
+section .home {
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
