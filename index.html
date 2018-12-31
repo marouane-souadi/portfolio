@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Souadi Marouane, fullstack web developer</title>
+  <title>Souadi Marouane,fullstack web developer</title>
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -14,21 +14,20 @@
     <div class="container nav">
       <div class="brand">
         <h2>Souadi Marouane</h2>
-        <h>>_fullstack web developer</h>
+        <h4 class="hide-onmobile">>_fullstack web developer</h4>
       </div>
       <nav>
-        <a href="#home"><i class="fas fa-home"></i><span>Home</span></a>
-        <a href="#about"><i class="fas fa-user-circle"></i><span>About me</span></a>
-        <a href="#skills"><i class="fas fa-puzzle-piece"></i><span>Skills</span></a>
-        <a href="#projects"><i class="fas fa-cubes"></i><span>Projects</span></a>
+        <a href="#home"><i class="fas fa-home hide-onmobile"></i><span>Home</span></a>
+        <a href="#about"><i class="fas fa-user-circle hide-onmobile"></i><span>About me</span></a>
+        <a href="#skills"><i class="fas fa-puzzle-piece hide-onmobile"></i><span>Skills</span></a>
+        <a href="#projects"><i class="fas fa-cubes hide-onmobile"></i><span>Projects</span></a>
       </nav>
     </div>
   </header>
   <section id="home-section" class="container home">
     <a id="home" class="anchor"></a>
-    <!-- <div class="background-image" style="background-image: url(./home.jpg);"></div> -->
     <h1>Welcome...</h1>
-    <h2>I'm  Souadi Marouane,</h2>
+    <h2>I'm Marouane,</h2>
     <h2>a passionate developer focussed on web technologies</h2>
     <div class="contact"></div>
     <div>
@@ -49,17 +48,18 @@
         </a>
     </div>
   </section>
-  <section id="about-section" class="container">
+  <section id="about-section" class="container about">
     <a id="about" class="anchor"></a>
     <h1>About me</h1>
+    <hr>
     <div class="about-collection">
       <div class="about-box">
-        <h2 class="title">Education</h2>
+        <div class="title"><img src="./assets/education.svg" alt="Web Frontend"><h2 class="title">Education</h2></div>        
         <P>Engineer degree in Computing Systems, 2005</P>
-        <a class="light-text" href="http://esi.dz/" target="blank">Superior Computing School, Algeria</a>
+        <a class="light-text" href="http://esi.dz/" target="blank"><span>Superior National School of Computing, Algeria</span></a>
       </div>
       <div class="about-box">
-          <h2 class="title">Experience</h2>
+        <div class="title"><img src="./assets/experience.svg" alt="experience"><h2 class="title">Professional Experience</h2></div>
           <P>2006-2017 : Office Manager and IT Manager in a local Civil Engineering Bureau</P>
         </div>
     </div>
@@ -67,6 +67,7 @@
   <section id="skills-section" class="container">
     <a id="skills" class="anchor"></a>
     <h1>Main Skills</h1>
+    <hr>
     <div class="skills-collection">
       <div class="skills-box">
         <img src="./assets/frontend.svg" alt="Web Frontend">
@@ -82,7 +83,7 @@
       <div class="skills-box">
         <img src="./assets/databases.svg" alt="Databases">
         <h3 class="title">Databases</h3>
-        <p class="light-text">MySQL, MongoDb, Sqlite</p>
+        <p class="light-text">MySQL, MongoDB, SQLite</p>
       </div>
       <div class="skills-box">
         <img src="./assets/miscellaneous.svg" alt="miscellaneous">
@@ -92,9 +93,17 @@
       </div>
     </div>
   </section>
-  <section id="projects-section" class="container">
+  <section class="container projects">
     <a id="projects" class="anchor"></a>
-    <h1>Projects</h1>
+    <h1 class="title">Projects</h1>
+    <hr>
+    <div class="project-box">
+        <a href="https://marouane-souadi.github.io/portfolio/" target="_blank" >
+      <h2>>_My Portfolio</h2>
+      <img src="./assets/portfolio.png" alt="portfolio">
+    </a>
+    </div>
+  
   </section>
   <footer class="container">
       

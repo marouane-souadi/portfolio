@@ -1,8 +1,15 @@
+:root {
+  --text-color : rgb(38, 50, 56);
+  --text-light : rgb(99, 99, 99);
+  --background-gray : rgb(207, 216 , 220);
+  --hover-color : rgb(0, 102 , 204);
+}
+
 * {
   margin : 0;
   box-sizing: border-box;
   font-family: Lato, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(38, 50, 56);
+  color: var(--text-color);
 }
 
 html, body {
@@ -14,7 +21,7 @@ html, body {
   padding-right: 15%;
 }
 
-@media (max-width:820px) {
+@media (max-width:1100px) {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -22,16 +29,25 @@ html, body {
 }
 
 .color {
-  color: rgb(38, 50, 56);
+  color: var(--text-color);
 }
 
 .inverted {
   color: white;
-  background-color: rgb(38, 50, 56);
+  background-color: var(--text-color);
 }
 
 .light-text {
-  color: rgb(99, 99, 99);
+  /* color: var(--text-light); */
+  opacity : 0.7;
+}
+
+a:hover > * {
+  color: var(--hover-color) !important;
+}
+
+i {
+  margin-right: 5px;
 }
 
 /*============= Header and Nav =============================*/
@@ -85,12 +101,15 @@ nav a {
   font-weight: 600;
 }
 
-a:hover > * {
-  color: rgb(0, 102 , 204);
-  /* background-color: rgb(207, 216 , 220); */
-}
-
 /*============= Sections =============================*/
+
+hr {
+  width: 33%;
+  height: 3px;
+  background-color: darkslategray;
+  border : 0;
+  margin : 0 auto 1rem auto;
+}
 
 /* Home Section Styles */
 
@@ -104,26 +123,18 @@ section.home {
 }
 
 section:first-of-type {
-  /* padding-top: 70px; */
   min-height: 100vh;
-}
-
-.home .background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 100vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 section.home h1 {
   text-align: center;
-  margin-bottom: 1rem;
   font-size: 3rem;
 }
+
+section.home h2 {
+  text-align: center;
+}
+
 section.home a > * {
   padding: 1rem 0 0 0.5rem;
 }
@@ -146,19 +157,35 @@ section a.anchor {
 
 section {
   position: relative;
-  /* padding: 2rem; */
+  padding: 3rem 0;
 }
 
-
-
 section:nth-of-type(even) {
-  background-color: rgb(207, 216 , 220);
+  background-color: var(--background-gray);
 }
 
 section h1 {
   text-align: center;
   line-height: 2;
   font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+section h2.title {
+  padding : 1.5rem 0;
+}
+
+/* About section styles */
+
+div.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+section.about img {
+  width: 4rem;
+  padding: 0.5rem;
 }
 
 /* Skills Section styles */
@@ -179,33 +206,69 @@ div.skills-box {
 
 div.skills-box img {
   width: 20%;
-  /* height: 50%; */
 }
-
 
 div.skills-box h3 {
   font-weight: 300;
-  /* padding : 0.75rem 0 0.25rem 0; */
   font-size: 1.5rem;
   line-height: 2;
 }
 
-div.title {
-  width: 25%;
-  text-align: right;
+/* Projects Section styles */
+
+div.project-box > a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 1rem 0;
 }
 
-i {
-  margin-right: 5px;
+div.project-box img {
+  width: 50%;
 }
 
+div.project-box > a:hover img {
+  box-shadow: 0 0 0.5rem 0.25rem var(--hover-color);
+}
+
+div.project-box h2 {
+  padding: 1rem 2rem 1rem 2rem;
+}
 
 /* Footer Styles */
 
 footer {
   display: flex;
   justify-content: center;
-  background-color: rgb(38, 50, 56);
+  background-color: var(--text-color);
 }
 
+@media (max-width:450px) {
+  *.hide-onmobile {
+    display: none !important;
+  }
 
+  section {
+    padding: 1rem 0;
+  }
+
+  section h1 {
+    padding-bottom: 0.5rem;
+  }
+
+  div.project-box img {
+    width: 100%;
+  }
+
+  div.project-box > a {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  div.skills-box {
+    width: 100%;
+    flex-direction: column;
+  }
+}
