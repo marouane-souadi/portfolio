@@ -1,7 +1,7 @@
 :root {
   --text-color : rgb(38, 50, 56);
-  --text-light : rgb(99, 99, 99);
-  --background-gray : rgb(207, 216 , 220);
+  --background-lowlight : rgb(211, 211, 211);
+  --background-color : rgb(250, 250, 250);
   --hover-color : rgb(0, 102 , 204);
 }
 
@@ -32,13 +32,7 @@ html, body {
   color: var(--text-color);
 }
 
-.inverted {
-  color: white;
-  background-color: var(--text-color);
-}
-
 .light-text {
-  /* color: var(--text-light); */
   opacity : 0.7;
 }
 
@@ -57,7 +51,7 @@ header {
   top : 0;
   left : 0;
   width: 100%;
-  background-color: white;
+  background-color: var(--background-color);
   z-index: 1;
 }
 
@@ -110,9 +104,22 @@ nav a {
 hr {
   width: 33%;
   height: 3px;
-  background-color: darkslategray;
+  background-color: var(--text-color);
   border : 0;
   margin : 0 auto 1rem auto;
+}
+
+section {
+  position: relative;
+  padding: 3rem 0;
+}
+
+section:nth-of-type(even) {
+  background-color: var(--background-lowlight);
+}
+
+section:nth-of-type(odd) {
+  background-color: var(--background-color);
 }
 
 /* Home Section Styles */
@@ -157,15 +164,6 @@ section a.anchor {
   position: absolute;
   left: 0px;
   top: -60px;
-}
-
-section {
-  position: relative;
-  padding: 3rem 0;
-}
-
-section:nth-of-type(even) {
-  background-color: var(--background-gray);
 }
 
 section h1 {
@@ -239,14 +237,6 @@ div.project-box > a:hover img {
 
 div.project-box h2 {
   padding: 1rem 2rem 1rem 2rem;
-}
-
-/* Footer Styles */
-
-footer {
-  display: flex;
-  justify-content: center;
-  background-color: var(--text-color);
 }
 
 @media (max-width:450px) {
