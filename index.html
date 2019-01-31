@@ -16,16 +16,16 @@
         <h2>Souadi Marouane</h2>
         <h4 class="hide-onmobile">>_fullstack web developer</h4>
       </div>
-      <nav>
-        <a href="#home"><i class="fas fa-home hide-onmobile"></i><span>Home</span></a>
+      <nav id="navbar">
+        <a href="#welcome"><i class="fas fa-home hide-onmobile"></i><span>Home</span></a>
         <a href="#about"><i class="fas fa-user-circle hide-onmobile"></i><span>About me</span></a>
         <a href="#skills"><i class="fas fa-puzzle-piece hide-onmobile"></i><span>Skills</span></a>
         <a href="#projects"><i class="fas fa-cubes hide-onmobile"></i><span>Projects</span></a>
       </nav>
     </div>
   </header>
-  <section id="home-section" class="container home">
-    <a id="home" class="anchor"></a>
+  <section id="welcome-section" class="container home">
+    <a id="welcome" class="anchor"></a>
     <h1>Welcome...</h1>
     <h2>I'm Marouane,</h2>
     <h2>a passionate developer focussed on web technologies</h2>
@@ -33,7 +33,7 @@
     <div>
         <a href="mailto:m.souadi@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
         <a href="https://www.linkedin.com/in/marouane-souadi-80635310/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="https://github.com/marouane-souadi" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        <a id="profile-link" href="https://github.com/marouane-souadi" target="_blank"><i class="fab fa-github fa-2x"></i></a>
     </div>
     <div class="location">
         <a href="https://goo.gl/maps/7dYy3k85TSq" target="_blank">
@@ -56,12 +56,18 @@
     <div class="about-collection">
       <div class="about-box">
         <div class="title"><img src="./assets/education.svg" alt="Web Frontend"><h2 class="title">Education</h2></div>        
-        <P>Engineer degree in Computing Systems, 2005</P>
-        <a class="light-text" href="http://esi.dz/" target="blank"><span>Superior National School of Computing, Algeria</span></a>
+        <ul>
+          <li>Engineer degree in Computing Systems, 2005 - <a class="light-text" href="http://esi.dz/" target="blank"><span>Superior National School of Computing, Algeria</span></a></li>
+          <li><a href="https://www.freecodecamp.org/certification/m.souadi/responsive-web-design" target="blank">freeCodeCamp : Responsive Web Design Certification </a></li>
+        </ul>
+        
       </div>
       <div class="about-box">
         <div class="title"><img src="./assets/experience.svg" alt="experience"><h2 class="title">Professional Experience</h2></div>
-        <P>2006-2017 : Office Manager and IT Manager in a local Civil Engineering Bureau</P>
+        <ul>
+          <li>2006-2013 : Office Manager and IT Manager in a Civil Engineering Bureau</li>
+          <li>2014-2018 : Co-founder of a Civil Engineering Office</li>
+        </ul>
       </div>
       <div class="about-box">
         <div class="title"><img src="./assets/languages.svg" alt="languages"><h2 class="title">Languages</h2></div>
@@ -87,7 +93,8 @@
       <div class="skills-box">
         <img src="./assets/backend.svg" alt="Web Backend">
         <h3 class="title">Web Backend </h3>
-        <p class="light-text">node.js, express, ejs, handlebars</p>
+        <p class="light-text">Node.js, express</p>
+        <p class="light-text">PHP, Laravel</p>
         <p class="light-text">RESTful API</p>
       </div>
       <div class="skills-box">
@@ -100,21 +107,23 @@
         <h3 class="title">Miscellaneous</h3>
         <p class="light-text">C/C++, C#, WPF, XAML</p>
         <p class="light-text">Python, Zope, Plone</p>
+        <p class="light-text">Git, Github, Heroku, Netlify</p>
       </div>
     </div>
   </section>
-  <section class="container projects">
+  <section id="projects" class="container projects">
     <a id="projects" class="anchor"></a>
     <h1 class="title">Projects</h1>
     <hr>
-    <div class="project-box">
-        <a href="https://marouane-souadi.github.io/portfolio/" target="_blank" >
-      <h2>>_My Portfolio</h2>
-      <img src="./assets/portfolio.png" alt="portfolio">
+    <div class="project-tile">
+        <a href="https://marouane-souadi.github.io/freeCodeCamp-Projects" target="_blank" >
+      <h2 class="project-title">freeCodeCamp Certification projects</h2>
+      <img src="./assets/freeCodeCamp.jpg" alt="freeCodeCamp">
     </a>
     </div>
   
   </section>
 </body>
 <script src="main.js"></script>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </html>

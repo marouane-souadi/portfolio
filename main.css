@@ -1,15 +1,15 @@
 :root {
-  --text-color : rgb(38, 50, 56);
-  --background-lowlight : rgb(211, 211, 211);
-  --background-color : rgb(250, 250, 250);
-  --hover-color : rgb(0, 102 , 204);
+  --primary: #133b7b;
+  --on-primary: white;
+  --background-lowlight : #f4f7f5;
+  --background: white;
+  --on-background: #133b7b;
 }
 
 * {
   margin : 0;
   box-sizing: border-box;
   font-family: Lato, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--text-color);
 }
 
 html, body {
@@ -28,16 +28,12 @@ html, body {
   }
 }
 
-.color {
-  color: var(--text-color);
-}
-
 .light-text {
   opacity : 0.7;
 }
 
 a:hover > * {
-  color: var(--hover-color) !important;
+  opacity: 0.7;
 }
 
 i {
@@ -51,7 +47,8 @@ header {
   top : 0;
   left : 0;
   width: 100%;
-  background-color: var(--background-color);
+  background-color: var(--primary);
+  color: var(--on-primary);
   z-index: 1;
 }
 
@@ -92,12 +89,20 @@ nav {
   display: flex;
 }
 
+a, a:visited {
+  color: inherit;
+}
+
 nav a {
   text-align: center;
   text-decoration: none;
+  color: var(--on-primary);
   padding: 0.5rem 1rem;
   font-weight: 600;
+  color: var(--on-primary);
 }
+
+
 
 /*============= Sections =============================*/
 
@@ -112,6 +117,7 @@ hr {
 section {
   position: relative;
   padding: 3rem 0;
+  color: var(--on-background);
 }
 
 section:nth-of-type(even) {
@@ -119,12 +125,12 @@ section:nth-of-type(even) {
 }
 
 section:nth-of-type(odd) {
-  background-color: var(--background-color);
+  background-color: var(--background);
 }
 
-/* Home Section Styles */
+/* Welcome Section Styles */
 
-section.home {
+#welcome-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,16 +143,16 @@ section:first-of-type {
   min-height: 100vh;
 }
 
-section.home h1 {
+#welcome-section h1 {
   text-align: center;
   font-size: 3rem;
 }
 
-section.home h2 {
+#welcome-section h2 {
   text-align: center;
 }
 
-section.home a > * {
+#welcome-section a > * {
   padding: 1rem 0 0 0.5rem;
 }
 
@@ -170,6 +176,7 @@ section h1 {
   text-align: center;
   line-height: 2;
   font-size: 2rem;
+  font-weight: 700;
   padding-bottom: 1rem;
 }
 
@@ -218,7 +225,7 @@ div.skills-box h3 {
 
 /* Projects Section styles */
 
-div.project-box > a {
+div.project-tile > a {
   width: 100%;
   display: flex;
   align-items: center;
@@ -227,15 +234,11 @@ div.project-box > a {
   padding: 1rem 0;
 }
 
-div.project-box img {
+div.project-tile img {
   width: 50%;
 }
 
-div.project-box > a:hover img {
-  box-shadow: 0 0 0.5rem 0.25rem var(--hover-color);
-}
-
-div.project-box h2 {
+div.project-tile h2 {
   padding: 1rem 2rem 1rem 2rem;
 }
 
@@ -252,11 +255,11 @@ div.project-box h2 {
     padding-bottom: 0.5rem;
   }
 
-  div.project-box img {
+  div.project-tile img {
     width: 100%;
   }
 
-  div.project-box > a {
+  div.project-tile > a {
     flex-direction: column;
     justify-content: center;
   }
