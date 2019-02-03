@@ -1,58 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Souadi Marouane, Fullstack web developer</title>
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   
-<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet"> 
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 </head>
 <body>
-  <header id="header">
-    <div class="container nav">
-      <div class="brand">
-        <h2>Souadi Marouane</h2>
-        <h4 class="hide-onmobile">Full-stack web developer</h4>
-      </div>
-      <nav id="navbar">
-        <a href="#welcome"><i class="fas fa-home hide-onmobile"></i><span>Home</span></a>
-        <a href="#about"><i class="fas fa-user-circle hide-onmobile"></i><span>About Me</span></a>
-        <a href="#skills"><i class="fas fa-puzzle-piece hide-onmobile"></i><span>Skills</span></a>
-        <a href="#projects"><i class="fas fa-cubes hide-onmobile"></i><span>Projects</span></a>
-      </nav>
-    </div>
-  </header>
   <section id="welcome-section" class="container home">
-    <a id="welcome" class="anchor"></a>
-    <h1>Welcome...</h1>
-    <h2>I'm Marouane,</h2>
-    <h2>a passionate developer focussed on web technologies</h2>
-    <div class="contact"></div>
+    <div class="background-image"></div>
+    <h1>Hi, I'm Marouane</h1>
     <div>
+      <h2>I'm passionate developer focussed on web technologies</h2>
+      <h2>My first rule is continuous learning and improvement</h2>
+    </div>
+    <nav id="navbar">
+        <a class="nav-link about" href="#about-section"><i class="fas fa-user-circle hide-onmobile"></i><span>About Me</span></a>
+        <a class="nav-link skills" href="#skills-section"><i class="fas fa-puzzle-piece hide-onmobile"></i><span>Skills</span></a>
+        <a class="nav-link projects" href="#projects-section"><i class="fas fa-cubes hide-onmobile"></i><span>Projects</span></a>
+        <a class="nav-link resume" href="./resume.pdf"><i class="far fa-file-pdf hide-onmobile"></i></i><span>Resume</span></a>
+    </nav>
+    <div class="contact-box">
+      <div class="contact-line">
         <a href="mailto:m.souadi@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
         <a href="https://www.linkedin.com/in/marouane-souadi-80635310/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
         <a id="profile-link" href="https://github.com/marouane-souadi" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-    </div>
-    <div class="location">
+      </div>
+      <div class="contact-line">
         <a href="https://goo.gl/maps/7dYy3k85TSq" target="_blank">
           <i class="fas fa-map-marker-alt fa-2x"></i>
           <span>Jijel, Algeria (UTC+1)</span>
         </a>
-    </div>
-    <div class="phone">
+      </div>
+      <div class="contact-line mobile">
         <a href="tel:+213 697337060">
           <i class="fas fa-mobile-alt fa-2x"></i>
           <i class="fab fa-viber fa-2x"></i>
-          <span>+213 697337060</span>
+          +213 697337060
         </a>
+      </div>
     </div>
   </section>
   <section id="about-section" class="container about">
-    <a id="about" class="anchor"></a>
-    <h1>About Me</h1>
-    <hr>
+    <h1 class="section-title">About Me</h1>
     <div class="about-collection">
       <div class="about-box">
         <div class="title"><img src="./assets/education.svg" alt="Web Frontend"><h2 class="title">Education</h2></div>        
@@ -80,40 +74,39 @@
     </div>
   </section>
   <section id="skills-section" class="container">
-    <a id="skills" class="anchor"></a>
-    <h1>Main Skills</h1>
+    <h1 class="section-title">Main Skills</h1>
     <hr>
     <div class="skills-collection">
       <div class="skills-box">
         <img src="./assets/frontend.svg" alt="Web Frontend">
-        <h3 class="title">Front-end </h3>
+        <h2 class="title">Front-end </h2>
         <p class="light-text">HTML, CSS, Javascript</p>
         <p class="light-text">React, Redux</p>
       </div>
       <div class="skills-box">
         <img src="./assets/backend.svg" alt="Web Backend">
-        <h3 class="title">Back-end </h3>
+        <h2 class="title">Back-end </h2>
         <p class="light-text">Node.js, express</p>
         <p class="light-text">PHP, Laravel</p>
         <p class="light-text">RESTful API</p>
       </div>
       <div class="skills-box">
         <img src="./assets/databases.svg" alt="Databases">
-        <h3 class="title">Databases</h3>
+        <h2 class="title">Databases</h2>
         <p class="light-text">MySQL, MongoDB, SQLite</p>
       </div>
       <div class="skills-box">
         <img src="./assets/miscellaneous.svg" alt="miscellaneous">
-        <h3 class="title">Miscellaneous</h3>
+        <h2 class="title">Miscellaneous</h2>
         <p class="light-text">C/C++, C#, WPF, XAML</p>
         <p class="light-text">Python, Zope, Plone</p>
         <p class="light-text">Git, Github, Heroku, Netlify</p>
       </div>
     </div>
   </section>
-  <section id="projects" class="container projects">
+  <section id="projects-section" class="container projects">
     <a id="projects" class="anchor"></a>
-    <h1 class="title">My Projects</h1>
+    <h1 class="section-title">My Projects</h1>
     <hr>
     <div class="project-tile">
         <a href="https://marouane-souadi.github.io/freeCodeCamp-Projects" target="_blank" >
