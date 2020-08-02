@@ -268,7 +268,7 @@ div.project-tile h2 {
 /* Media Queries                                            */
 /* ======================================================== */
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 640px) {
   .container {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
