@@ -2,19 +2,23 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Souadi Marouane, Fullstack web developer</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <title>Souadi Marouane, Fullstack engineer</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
 
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135334817-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
 
     gtag('config', 'UA-135334817-1');
@@ -22,153 +26,218 @@
 </head>
 
 <body>
-  <section id="welcome-section" class="container home">
-    <div class="background-image"></div>
-    <h1>Hi, I'm Marouane</h1>
+<section id="welcome-section" class="container row vertical-on-mobile justify-content-space-between"
+         style="height: 100%; min-height: 28rem;">
+  <div class="background-image"></div>
+  <div class="content row vertical justify-content-space-around" style="flex-grow: 1;">
     <div>
-      <h2>a passionate developer focused on web technologies</h2>
+      <h1 style="text-align: initial;">Marouane Souadi</h1>
+      <h2 class="title-2">
+        <span>/>fullstack_engineer :)</span>
+        <a class="btn" href="./resume.pdf" target="_blank" style="font-size: 1rem; display: inline-block;">
+          <i class="far fa-file-pdf mr-1" style="color: red;"></i><span>Resume</span>
+        </a>
+      </h2>
     </div>
-    <nav id="navbar">
-      <a class="nav-link about" href="#about-section"><i class="fas fa-user-circle hide-onmobile"></i><span>About
-          Me</span></a>
-      <a class="nav-link skills" href="#skills-section"><i
-          class="fas fa-puzzle-piece hide-onmobile"></i><span>Skills</span></a>
-      <a class="nav-link projects" href="#projects-section"><i
-          class="fas fa-cubes hide-onmobile"></i><span>Projects</span></a>
-      <a class="nav-link resume" href="./resume.pdf"><i
-          class="far fa-file-pdf hide-onmobile"></i><span>Resume</span></a>
-    </nav>
-    <div class="contact-box">
+
+    <div class="contact-box px-1 py-2">
+      <h3>Contact</h3>
       <div class="contact-line">
-        <a href="mailto:m.souadi@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/marouane-souadi-80635310/" target="_blank"><i
-            class="fab fa-linkedin fa-2x"></i></a>
-        <a id="profile-link" href="https://github.com/marouane-souadi" target="_blank"><i
-            class="fab fa-github fa-2x"></i></a>
-      </div>
-      <div class="contact-line">
-        <a href="https://goo.gl/maps/7dYy3k85TSq" target="_blank">
-          <i class="fas fa-map-marker-alt fa-2x"></i>
-          <span>Jijel, Algeria (UTC+1)</span>
+        <a href="mailto:m.souadi@gmail.com"><i class="fas fa-envelope fa-2x mr-1"></i></a>
+        <a href="https://www.linkedin.com/in/marouane-souadi-80635310/"
+           target="_blank" style="color: #0077B5;" class="mr-1">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a id="profile-link" href="https://github.com/marouane-souadi"
+           target="_blank" style="color: #161b22;" class="mr-1">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="viber://chat?number=%2B213697337060" style="color: #7d3daf;" class="mr-1">
+          <i class="fab fa-viber fa-2x"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=+213697337060" style="color: #00e676;" class="mr-1">
+          <i class="fab fa-whatsapp fa-2x"></i>
         </a>
       </div>
       <div class="contact-line mobile">
-        <a href="tel:+213 697337060">
-          <i class="fas fa-mobile-alt fa-2x"></i>
+        <a href="tel:+213 697337060" class="mr-1">
+          <i class="fas fa-mobile-alt"></i>
         </a>
-        <a href="tel:+213 697337060">
-          <i class="fab fa-viber fa-2x"></i>
-        </a>
-        <a href="tel:+213 697337060">
-          <i class="fab fa-whatsapp fa-2x"></i>
-        </a>
-        <a href="tel:+213 697337060">
+
+
+        <a href="tel:+213 697337060 fa-2x">
           +213 697337060
         </a>
       </div>
+      <div class="contact-line">
+        <a href="https://goo.gl/maps/7dYy3k85TSq" target="_blank">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Jijel, Algeria (UTC+1)</span>
+        </a>
+      </div>
     </div>
-  </section>
-  <section id="about-section" class="container about">
-    <h1 class="section-title">About Me</h1>
-    <div class="about-collection">
-      <div class="about-box">
-        <div class="title"><img src="./assets/education.svg" alt="Web Frontend">
-          <h2 class="title">Education</h2>
-        </div>
-        <ul>
-          <li>Engineer degree in Computing Systems, 2005 - <a class="light-text" href="http://esi.dz/"
-              target="blank"><span>Superior National School of Computing, Algeria</span></a></li>
-          <li>Magister degree in Computing Systems, 2009 - <a class="light-text" href="http://esi.dz/"
-              target="blank"><span>Superior National School of Computing, Algeria</span></a></li>
-          <li><a href="https://www.freecodecamp.org/certification/m.souadi/responsive-web-design"
-              target="blank">freeCodeCamp : Responsive Web Design Certification, 2019</a></li>
-        </ul>
 
-      </div>
-      <div class="about-box">
-        <div class="title"><img src="./assets/experience.svg" alt="experience">
-          <h2 class="title">Professional Experience</h2>
-        </div>
-        <ul>
-          <li>2004-2005 : Web Developer at ITComp, internship</li>
-          <li>2008-2009 : Data Engineer at Groupe ENAVA, internship</li>
-          <li>2010-2018 : IT Manager at BETS Engineering</li>
-          <li>From 2019 : Freelance Developer</li>
-        </ul>
-      </div>
-      <div class="about-box">
-        <div class="title"><img src="./assets/languages.svg" alt="languages">
-          <h2 class="title">Languages</h2>
-        </div>
-        <ul>
-          <li>Arabic : Native</li>
-          <li>French : Professional (TCF-B2)</li>
-          <li>English : Writing : Good, Speaking : Medium</li>
-        </ul>
-      </div>
+  </div>
+  <nav id="navbar" class="row vertical align-items-flex-end justify-content-space-around horizontal-on-mobile">
+    <a class="btn" href="#about-section">
+      <i class="fas fa-user-circle hide-onmobile mr-1"></i><span>About me</span>
+    </a>
+    <a class="btn" href="#skills-section">
+      <i class="fas fa-puzzle-piece hide-onmobile mr-1"></i><span>Skills</span>
+    </a>
+    <a class="btn" href="#projects-section">
+      <i class="fas fa-cubes hide-onmobile mr-1"></i><span>Projects</span>
+    </a>
+
+  </nav>
+</section>
+<section id="about-section" class="container about has-background-lighter">
+  <h1 class="title">About</h1>
+  <div class="about-collection">
+    <div class="about-box">
+      <h2 class="title-2">
+        <i class="fas fa-graduation-cap mr-1"></i>
+        <span>Education</span>
+      </h2>
+      <ul>
+        <li>
+          Engineer degree in Computer Science, 2005 -
+          <a class="light-text" href="http://esi.dz/" target="blank">
+            <span>Superior National School of Computing, Algeria</span>
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </li>
+        <li>
+          <span>Magister degree in Computer Science, 2009 -</span>
+          <a class="light-text" href="http://esi.dz/" target="blank">
+            <span>Superior National School of Computing, Algeria</span>
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.freecodecamp.org/certification/m.souadi/responsive-web-design" target="blank">
+            freeCodeCamp : Responsive Web Design Certification, 2019
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </li>
+      </ul>
+
     </div>
-  </section>
-  <section id="skills-section" class="container">
-    <h1 class="section-title">Main Skills</h1>
-    <hr>
-    <div class="skills-collection">
-      <div class="skills-box">
-        <img src="./assets/frontend.svg" alt="Web Frontend">
-        <h2 class="title">Front-end </h2>
-        <p class="light-text">HTML, CSS, Javascript</p>
-        <p class="light-text">Reactjs, Vuejs</p>
-      </div>
-      <div class="skills-box">
-        <img src="./assets/backend.svg" alt="Web Backend">
-        <h2 class="title">Back-end </h2>
-        <p class="light-text">Node.js, express</p>
-        <p class="light-text">PHP, Laravel</p>
-        <p class="light-text">RESTful API</p>
-      </div>
-      <div class="skills-box">
-        <img src="./assets/databases.svg" alt="Databases">
-        <h2 class="title">Databases</h2>
-        <p class="light-text">MySQL, MongoDB, SQLite</p>
-      </div>
-      <div class="skills-box">
-        <img src="./assets/miscellaneous.svg" alt="miscellaneous">
-        <h2 class="title">Others</h2>
-        <p class="light-text">C/C++, C#, WPF, XAML</p>
-        <p class="light-text">Python</p>
-        <p class="light-text">Git, Github, Heroku, Netlify</p>
-      </div>
+    <div class="about-box">
+      <h2 class="title-2">
+        <i class="fas fa-briefcase mr-1"></i>
+        <span>Professional Experience</span>
+      </h2>
+      <ul>
+        <li>2004-2005 : Web Developer at ITComp, internship</li>
+        <li>2008-2009 : Data Engineer at Groupe ENAVA, internship</li>
+        <li>2010-2018 : IT Manager at BETS Engineering</li>
+        <li>From 2019 : Fullstack engineer, Self-employed</li>
+      </ul>
     </div>
-  </section>
-  <section id="projects-section" class="container projects">
-    <a id="projects" class="anchor"></a>
-    <h1 class="section-title">My Projects</h1>
-    <hr>
-    <div class="project-tile">
-      <a href="https://marouane-souadi.github.io/freeCodeCamp-Projects" target="_blank">
-        <h2 class="project-title">freeCodeCamp certification projects</h2>
-        <img src="./assets/freeCodeCamp.jpg" alt="freeCodeCamp">
-      </a>
+    <div class="about-box">
+      <h2 class="title-2">
+        <i class="fas fa-language mr-1"></i>
+        <span>Languages</span>
+      </h2>
+      <ul>
+        <li>Arabic : Native</li>
+        <li>French : Professional (TCF-B2)</li>
+        <li>English : Writing, Reading : Good, Speaking : Medium</li>
+      </ul>
     </div>
-    <div class="project-tile">
-      <a href="https://www.hawielec.ml/" target="_blank">
-        <h2 class="project-title">HawiElec : Electronic Shop Online Store</h2>
-        <img src="./assets/hawi-store.jpg" alt="hawi-store">
-      </a>
+  </div>
+</section>
+<section id="skills-section" class="container has-background-light">
+  <h1 class="title">Main Skills</h1>
+  <div class="row" style="flex-wrap: wrap;">
+    <div class="skills-box">
+      <h2 class="title-2"><i class="fas fa-palette mr-1"></i>Web Front-end </h2>
+      <p class="light-text">
+        <img src="./assets/html-logo.png" class="is-32x32 mr-1" alt="html"/>
+        <img src="./assets/css-logo.png" class="is-32x32 mr-1" alt="css"/>
+        <img src="./assets/sass-logo.png" class="is-32x32 mr-1" alt="css"/>
+        <img src="./assets/bootstrap-logo.png" class="is-32x32 mr-1" alt="css"/>
+        <img src="./assets/bulma-logo.png" class="is-32x32 mr-1" alt="css"/>
+      </p>
+      <p class="light-text">
+        <img src="./assets/javascript-logo.png" class="is-32x32 mr-1" alt="css"/>
+        <img src="./assets/jquery-logo.png" class="is-32x32 mr-1" alt="css"/>
+        <img src="./assets/react-logo.png" class="is-32x32 mr-1" alt="css"/>
+        <img src="./assets/redux-logo.png" class="is-32x32 mr-1" alt="css"/>
+        <img src="./assets/vue-logo.png" class="is-32x32 mr-1" alt="css"/>
+      </p>
+      <p>
+        <img src="./assets/babel-logo.png" class="is-32x32 mr-1" alt="css"/>
+        <img src="./assets/webpack-logo.png" class="is-32x32 mr-1" alt="css"/>
+      </p>
     </div>
-    <div class="project-tile">
-      <a href="https://www.topsoftsolutions.com" target="_blank">
-        <h2 class="project-title">Toposoft software company website</h2>
-        <img src="./assets/topsoft.jpg" alt="topsoft">
-      </a>
+    <div class="skills-box">
+      <h2 class="title-2"><i class="fas fa-code mr-1"></i>Web Back-end </h2>
+      <p class="light-text">
+        <img src="./assets/nodejs-logo.png" class="is-32x32 mr-1" alt="css"/>
+        <img src="./assets/npm-logo.png" class="is-32x32 mr-1" alt="css"/>
+        <img src="./assets/npm-logo.png" class="is-32x32 mr-1" alt="css"/>
+      </p>
+      <p class="light-text">
+        <img src="./assets/php-logo.png" class="is-32x32 mr-1" alt="css"/>
+        <img src="./assets/laravel-logo.png" class="is-32x32 mr-1" alt="css"/>
+        <img src="./assets/restful-logo.png" class="is-32x32 mr-1" alt="css"/>
+      </p>
     </div>
-    <div class="project-tile">
-      <a href="https://www.keytalentpartners.com" target="_blank">
-        <h2 class="project-title">Recruitment Agency Platform</h2>
-        <img src="./assets/keytalentpartners.jpg" alt="keytalentpartners">
-      </a>
+    <div class="skills-box">
+      <h2 class="title-2"><i class="fas fa-database mr-1"></i>Databases</h2>
+      <p class="light-text">
+<!--        <img src="./assets/sql-logo.jpg" class="is-32x32 mr-1" alt="css"/>-->
+        <img src="./assets/mysql-logo.png" class="is-32x32 mr-1" alt="css"/>
+        <img src="./assets/sqlite-logo.png" class="is-32x32 mr-1" alt="css"/>
+        <img src="./assets/mongodb-logo.png" class="is-32x32 mr-1" alt="css"/>
+</p>
     </div>
-  </section>
+    <div class="skills-box">
+      <h2 class="title-2"><i class="fas fa-laptop-code mr-1"></i>Others</h2>
+      <p class="light-text">
+        <img src="./assets/c++logo.png" class="is-32x32 mr-1" alt="html"/>
+<!--        C, C#, WPF, XAML,-->
+        <img src="./assets/python-logo.png" class="is-32x32 mr-1" alt="python"/>
+      </p>
+      <p class="light-text">
+        <img src="./assets/git-logo.png" class="is-32x32 mr-1" alt="git"/>
+        <img src="./assets/github-logo.png" class="is-32x32 mr-1" alt="git"/>
+<!--        GCloud, Heroku, Netlify-->
+      </p>
+    </div>
+  </div>
+</section>
+<section id="projects-section" class="container projects">
+  <a id="projects" class="anchor"></a>
+  <h1 class="title">Projects</h1>
+  <div class="project-tile card">
+    <a href="https://marouane-souadi.github.io/freeCodeCamp-Projects" target="_blank">
+      <h2 class="project-title">freeCodeCamp certification projects</h2>
+      <img src="./assets/freeCodeCamp.jpg" alt="freeCodeCamp">
+    </a>
+  </div>
+  <div class="project-tile card">
+    <a href="https://www.hawielec.ml/" target="_blank">
+      <h2 class="project-title">HawiElec : Electronic Shop Online Store</h2>
+      <img src="./assets/hawi-store.jpg" alt="hawi-store">
+    </a>
+  </div>
+  <div class="project-tile card">
+    <a href="https://topsoftsolutions.tk/" target="_blank">
+      <h2 class="project-title">Toposoft software company website</h2>
+      <img src="./assets/topsoft.jpg" alt="topsoft">
+    </a>
+  </div>
+  <div class="project-tile card">
+    <a href="https://www.keytalentpartners.com" target="_blank">
+      <h2 class="project-title">Recruitment Agency Platform</h2>
+      <img src="./assets/keytalentpartners.jpg" alt="keytalentpartners">
+    </a>
+  </div>
+</section>
 </body>
-<script src="main.js"></script>
+<!--<script src="main.js"></script>-->
 
 </html>
