@@ -147,8 +147,6 @@ section:first-of-type {
 }
 
 .contact-box {
-    background-color: rgba(222, 222, 222, 0.76);
-    border-radius: .5rem;
     margin-right: auto;
 }
 
@@ -175,11 +173,9 @@ div.skills-box {
     width: 45%;
     align-items: center;
     padding: 0.5rem;
-    border-radius: .5rem;
 }
 
 div.skills-box h2 {
-
     line-height: 2;
 }
 
