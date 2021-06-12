@@ -17,6 +17,11 @@
     ;
 }
 
+.blue-background { background-color: #26B3FB !important;}
+.yellow-background { background-color: #FE9900 !important;}
+.green-background { background-color: #81CF01 !important;}
+.red-background { background-color: #C20000 !important;}
+
 html, body {
     height: 100%;
     color: #2f3640;
@@ -36,6 +41,7 @@ a {
 }
 
 .mr-1 { margin-right: .5rem; }
+.ml-3 { margin-left: 2rem; }
 .mb-1 { margin-bottom: .5rem; }
 .px-1 { padding-top: 1rem; padding-bottom: 1rem; }
 .py-2 { padding-left: 1rem; padding-right: 1rem;}
@@ -44,16 +50,8 @@ a {
 .vertical { flex-direction: column; }
 .justify-content-space-around { justify-content: space-around; }
 .justify-content-space-between { justify-content: space-between; }
+.justify-content-flex-end { justify-content: flex-end; }
 .align-items-flex-end { align-items: flex-end; }
-
-
-
-.nav {
-    min-height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 a, a:visited {
     color: var(--primary);
@@ -89,6 +87,7 @@ section h1 {
     /*text-align: center;*/
     font-size: 2rem;
     font-weight: normal;
+    color: var(--primary);
 }
 
 section h2.title {
@@ -109,25 +108,40 @@ section h2.title {
 
 div.background-image {
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-image: url("./assets/Trianglify-33.3s-1362px.png");
-    z-index: -1;
-    opacity: 0.7;
+    top: 10rem;
+    left: 50%;
+    bottom: 3rem;
+    right: 10rem;
+    background-image: url("./assets/portfolio-logo-big.png");
+    z-index: 100;
+    /*opacity: 0.7;*/
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+}
+
+nav a {
+    width: 10rem;
+    text-align: center;
+}
+
+nav {
+    min-height: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40%;
 }
 
 section:first-of-type {
     min-height: 100vh;
+    background: #131315;
 }
 
 #welcome-section h1 {
+    font-family: 'Montserrat';
     font-size: 3rem;
     font-weight: normal;
+    color: white;
 }
 
 
@@ -135,11 +149,11 @@ section:first-of-type {
     line-height: 2rem;
     font-weight: 500;
     margin-bottom: 1rem;
+    color: var(--primary);
 }
 
 .contact-line {
     align-items: center;
-    margin: 0.7rem 0;
 }
 
 .contact-line * {
@@ -147,9 +161,17 @@ section:first-of-type {
 }
 
 .contact-box {
+    margin-top: 2rem;
     margin-right: auto;
-    background-color: #fff6d666;
+    background-color: #43434391;
+    box-shadow: 0 3px 8px rgba(21, 20, 26, 0.50), 0 0 2px rgba(21 20 26, 0.75);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;
+    width: 400px;
 }
+
+.contact-box a { color: rgba(255, 255, 255, 0.75);}
 
 /* ======================================================== */
 /* About section styles                                     */
@@ -215,9 +237,18 @@ div.project-tile h2 {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
-#welcome-section {
-    justify-content: flex-start;
-}
+
+    .background-image {
+        display: none;
+    }
+    .logo {
+        display: block;
+    }
+
+    #welcome-section {
+        justify-content: flex-start;
+    }
+
     *.hide-onmobile {
         display: none !important;
     }
@@ -230,9 +261,10 @@ div.project-tile h2 {
         flex-direction: column;
     }
 
-    nav {
-        order: -1;
-    }
+    nav { margin-left: 0; justify-content: space-around;}
+    nav a { width: 6rem; padding: .5rem !important;}
+
+    .contact-box { width: 300px;}
 
     section {
         padding: 1rem 0;
